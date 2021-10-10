@@ -50,9 +50,9 @@ generate.onclick = function performAction(){
             })
             // Function to update UI
             .then(response =>{
-                document.getElementById('date').innerText = `Date is: is ${response.date}`
-                document.getElementById('temp').innerText = `Temp is: ${response.temp}`
-                document.getElementById('content').innerText = `Content is: ${response.feeling}`
+                document.getElementById('date').innerHTML = `Date is: is ${response.date}`
+                document.getElementById('temp').innerHTML = `Temp is: ${response.temp}`
+                document.getElementById('content').innerHTML = `Content is: ${response.feeling}`
             })
             .catch(err => console.log(err));
         }
